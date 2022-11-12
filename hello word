@@ -1,0 +1,8 @@
+package 第一;
+
+public class myown {
+
+	public static void main(String[] args) {
+		System.out.print("harmonious co-existence between human and nature");
+	}
+}
