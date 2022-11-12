@@ -1,0 +1,15 @@
+import javax.swing.*;
+public class myown {
+	public static void main(String[] args) {
+		String mTime="";
+		String optClass[]= {"电信-1","电信-2","通信-1","通信-2"};
+		String mClass=(String)JOptionPane.showInputDialog(null,"选择班级:","查询",JOptionPane.INFORMATION MESSAGE,null,optClass,optClass[0]);
+		switch(mClass) {
+			case"电信-1":mTime="13:00";break;
+			case"电信-2":mTime="14:00";break;
+			case"通信-1":mTime="15:00";break;
+			case"通信-2":mTime="16:00";break;
+		}
+		JOptionPane.showMessageDialog(null,mClass+"的核酸开始时间:"+mTime);
+	}
+}
