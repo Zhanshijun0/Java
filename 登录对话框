@@ -1,0 +1,29 @@
+import javax.swing.*;
+public class dd {
+public static void main (String[] args){
+     String name,pass;
+     String name0="zhan";
+     String pass0="123456789";
+     int i=0,j=0;{
+     while(i<3){
+         i=i+1;
+         name=JOptionPane.showInputDialog(null,"请输入用户名","登录",JOptionPane.PLAIN_MESSAGE);
+         pass=JOptionPane.showInputDialog(null,"请输入密码","登录",JOptionPane.PLAIN_MESSAGE);
+         if(name.isEmpty()||pass.isEmpty()){
+             JOptionPane.showMessageDialog(null,"用户名或密码不能为空","提示",JOptionPane.ERROR_MESSAGE);
+         }
+         else if(name.equals(name0)&&pass.equals(pass0)){
+             JOptionPane.showMessageDialog(null,"输入正确","提示",JOptionPane.PLAIN_MESSAGE);
+             j=1;
+             break;
+         }
+         else{
+             JOptionPane.showMessageDialog(null,"用户名或密码错误","提示",JOptionPane.ERROR_MESSAGE);
+         }
+     }
+     if(i==3&&j==0){
+         JOptionPane.showMessageDialog(null,"输入次数已达上限","提示",JOptionPane.ERROR_MESSAGE);
+      }
+  }
+}
+}
